@@ -1,0 +1,15 @@
+{
+  "name": "monthiversary",
+  "description": "A fantasy choose-your-own-adventure set in an Alice in Wonderland-style world: the protagonist, Alice, wakes somewhere strange and learns she is the Princess of Hearts. Readers advanced one sentence at a time; at choice points they saw only the next stretch of story that had been chosen for them in advance and could not steer the plot. Afterward they typed everything they could remember.",
+  "stories": [
+    "monthiversary_3",
+    "monthiversary_4",
+    "monthiversary_10",
+    "monthiversary_14",
+    "monthiversary_19",
+    "monthiversary_23",
+    "monthiversary_25"
+  ],
+  "num_stories": 7,
+  "modality": "text"
+}

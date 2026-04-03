@@ -1,0 +1,10 @@
+{
+  "name": "recall matching benchmark",
+  "version": "1.0",
+  "description": "A benchmark for evaluating recall-to-story segment matching methods.",
+  "datasets": [
+    "alice",
+    "monthiversary",
+    "memsearch"
+  ]
+}

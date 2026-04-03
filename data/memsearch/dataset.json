@@ -1,0 +1,18 @@
+{
+  "name": "memsearch",
+  "description": "A collection of short animated films that explore different themes and stories. Participants watched 20 movies and then verbally described everything they could remember. Transcriptions were curated by human annotators.",
+  "stories": [
+    "breadland",
+    "ednora",
+    "from_dad_to_son",
+    "heartstrings",
+    "hollow",
+    "i_love_death",
+    "ichthys",
+    "laundry",
+    "mismatched",
+    "mop"
+  ],
+  "num_stories": 10,
+  "modality": "audiovisual"
+}

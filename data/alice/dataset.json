@@ -1,0 +1,18 @@
+{
+  "name": "alice",
+  "description": "A long, realistic romance narrative about a woman moving on from a breakup and possibly toward someone new. Readers moved through the story sentence by sentence and, at choice points, saw two options but had to continue along a path that was already fixed for them (they did not control the plot). Afterward they typed everything they could remember.",
+  "stories": [
+    "alice_2",
+    "alice_3",
+    "alice_4",
+    "alice_5",
+    "alice_6",
+    "alice_7",
+    "alice_8",
+    "alice_11",
+    "alice_12",
+    "alice_13"
+  ],
+  "num_stories": 10,
+  "modality": "text"
+}

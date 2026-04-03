@@ -19,7 +19,7 @@ benchmark/
     {story}/
       transcripts/{method}.json
       recalls/{method}.json
-      matches/{rater}-{story_method}-{recall_method}.json
+      matches/{matcher}-{story_method}-{recall_method}.json
 ```
 
 ## File formats
@@ -47,12 +47,12 @@ All files are JSON.
 }
 ```
 
-### Matches (`matches/{rater}-{story_method}-{recall_method}.json`)
+### Matches (`matches/{matcher}-{story_method}-{recall_method}.json`)
 
 ```json
 {
   "type": "matches",
-  "rater": "human",
+  "matcher": "human",
   "story_segmentation": "events",
   "recall_segmentation": "sentences",
   "n_story_segments": 4,

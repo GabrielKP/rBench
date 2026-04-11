@@ -13,13 +13,13 @@ Writes to:
 """
 
 import io
+import json
 import math
 from pathlib import Path
 
 import pandas as pd
 import requests
-
-from utils import write_json
+from rich.console import Console
 
 # ── alice config ──────────────────────────────────────────────────────────────
 ALICE_GITHUB_URL = (
@@ -40,6 +40,15 @@ ALICE_STORIES = [
 
 
 # ── helpers ───────────────────────────────────────────────────────────────────
+
+console = Console()
+
+
+def write_json(path: Path, data: dict, indent: int | None = None) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(data, f, ensure_ascii=False, indent=indent)
+    print(f"  wrote {path}")
 
 
 def _download_bytes(url: str) -> bytes:
@@ -62,12 +71,10 @@ def parse_cyoa_events(
 ) -> list[int]:
     """Parse the events column from a CYOA recall CSV into 0-based story indices."""
     if isinstance(events_raw, float) and math.isnan(events_raw):
+        # For alice10, monthiversary6, all 'none' values stem from empty cells, I checked.
         return []
     elif isinstance(events_raw, int):
-        try:
-            events_raw = str(events_raw)
-        except ValueError:
-            return []
+        events_raw = str(events_raw)
     elif isinstance(events_raw, float):
         if ".0" in str(events_raw):  # It's X.0
             events_raw = str(int(events_raw))
@@ -96,14 +103,16 @@ def parse_cyoa_events(
                 if 0 <= chunk_idx < n_events:
                     indices.append(chunk_idx)
                 else:
-                    print(
+                    console.print(
                         "  Warning: event index out of range:"
-                        f" {sub_id=} {story_name=} idx={chunk_idx} {idx_recall=}"
+                        f" {sub_id=} {story_name=} idx={chunk_idx} {idx_recall=}",
+                        style="red",
                     )
         elif idx_event < 0 or idx_event >= n_events:
-            print(
+            console.print(
                 f"  Warning: event index out of range:"
-                f" {sub_id=} {story_name=} idx={idx_event} {idx_recall=}"
+                f" {sub_id=} {story_name=} idx={idx_event} {idx_recall=}",
+                style="red",
             )
         else:
             indices.append(idx_event)

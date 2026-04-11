@@ -6,8 +6,8 @@ A benchmark for evaluating recall-to-story segment matching methods.
 | Dataset           | Stories                      | Modality    | Transcript segmentation | Recall segmentation | Source                                                        |
 | ----------------- | ---------------------------- | ----------- | ----------------------- | ------------------- | ------------------------------------------------------------- |
 | **alice**         | 10 short interactive stories | text        | scenes                  | sub_sentences       | [Li et al. 2024](https://doi.org/10.31234/osf.io/7evwj)       |
-| **monthiversary** | 7 long interactive stories   | text        | scenes                  | sub_sentences       |
-| **memsearch**     | 10 short animated films      | audiovisual | events, scenes          | sentences           | [Li et al. 2024](https://doi.org/10.31234/osf.io/7evwj)       |
+| **monthiversary** | 7 long interactive stories   | text        | scenes                  | sub_sentences       | [Li et al. 2024](https://doi.org/10.31234/osf.io/7evwj)       |
+| **memsearch**     | 10 short animated films      | audiovisual | events, scenes          | sentences           | (to be added)                                                 |
 | **filmfest**      | 10 short narrative films     | audiovisual | scenes                  | sub_sentences       | [Lee & Chen 2022](https://doi.org/10.1038/s41467-022-31965-2) |
 
 ## Directory structure

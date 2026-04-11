@@ -1,0 +1,19 @@
+{
+  "name": "filmfest",
+  "description": "A series of short films shown to participants during an fMRI 'film festival' session. Participants watched 10 narrative films (plus two brief cartoon intros) and afterward verbally recalled everything they could remember from each film.",
+  "stories": [
+    "catch_me_if_you_can",
+    "the_record",
+    "the_boyfriend",
+    "the_shoe",
+    "keith_reynolds",
+    "the_rock",
+    "the_prisoner",
+    "the_black_hole",
+    "post_it_love",
+    "bus_stop"
+  ],
+  "num_stories": 10,
+  "modality": "audiovisual",
+  "source": "Lee, Hongmi, and Janice Chen. 'Predicting Memory from the Network Structure of Naturalistic Events.' Nature Communications 13, no. 1 (2022): 1. https://doi.org/10.1038/s41467-022-31965-2."
+}

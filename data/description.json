@@ -1,6 +1,6 @@
 {
   "name": "recall matching benchmark",
-  "version": "1.0.0",
+  "version": "2.0.0a1",
   "description": "A benchmark for evaluating recall-to-story segment matching methods.",
   "datasets": [
     "alice",
